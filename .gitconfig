@@ -1,0 +1,33 @@
+[user]
+	name = Trevor Gross
+	email = tmgross@umich.edu
+	signingkey = 99F165E8125880C2
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	pager = delta
+[interactive]
+	difffilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+	line-numbers = true
+	side-by-side = true
+# [submodule]
+#	recurse = true
+[sendemail]
+    smtpencryption = tls
+    smtpserver = smtp.mail.umich.edu
+    smtpuser = tmgross
+    smtpserverport = 587
