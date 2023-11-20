@@ -1,0 +1,51 @@
+Host incontrol-test
+  HostName ec2-18-188-200-153.us-east-2.compute.amazonaws.com
+  User admin
+  IdentityFile ~/.ssh/keys/aws-incontrol-test.pem
+  LocalForward 3306 localhost:3306
+  LocalForward 4000 localhost:4000
+  LocalForward 9000 localhost:9000
+  LocalForward 9001 localhost:9001
+
+Host incontrol-rocks
+  HostName incontrol.rocks
+  User admin
+  IdentityFile ~/.ssh/keys/aws-incontrol.pem
+
+Host incontrol-production
+  # HostName 192.168.4.40 
+  HostName incontrol-01.intrepidcs.corp
+  User icsadmin
+  IdentityFile ~/.ssh/id_rsa
+  LocalForward 5560 localhost:5560
+  LocalForward 9010 localhost:9001
+
+Host dragonfruit
+  HostName 192.168.150.202
+  User tmgross
+  Port 57164
+
+Host dragonfruit-wsl
+  Hostname 192.168.150.202
+  User tmgross
+  Port 62181
+
+Host dragonfruit-remote
+  HostName 10.150.150.1
+  User tmgross
+  Port 57164
+
+Host dragonfruit-remote-wsl
+  HostName 10.150.150.1
+  User tmgross
+  Port 62181
+
+Host rpi
+  HostName 192.168.150.206
+  User tmgross
+  Port 58242
+
+Host rpi-remote
+  HostName 76.136.32.25
+  User tmgross
+  Port 58242
