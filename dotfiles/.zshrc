@@ -59,7 +59,6 @@ export PATH="$(brew --prefix bison)/bin:$PATH"
 
 eval "$(zoxide init zsh)"
 
-source /Users/tmgross/.docker/init-zsh.sh || true # Added by Docker Desktop
 export CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse
 
 # >>> juliaup initialize >>>
