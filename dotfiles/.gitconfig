@@ -19,15 +19,16 @@
 	navigate = true
 [merge]
 	conflictstyle = diff3
-
 [diff]
 	colorMoved = default
 	line-numbers = true
 	side-by-side = true
-# [submodule]
-#	recurse = true
 [sendemail]
-    smtpencryption = tls
-    smtpserver = smtp.mail.umich.edu
-    smtpuser = tmgross
-    smtpserverport = 587
+	smtpencryption = tls
+	smtpserver = smtp.mail.umich.edu
+	smtpuser = tmgross
+	smtpserverport = 587
+
+# intrepidcs config
+[includeIf "gitdir:~/Documents/ics/"]
+	path = ~/.shared-config/dotfiles/.gitconfig-ics
