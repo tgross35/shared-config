@@ -10,13 +10,13 @@ Host incontrol-test
 Host incontrol-rocks
   HostName incontrol.rocks
   User admin
-  IdentityFile ~/.ssh/keys/aws-incontrol.pem
+# IdentityFile ~/.ssh/keys/aws-incontrol.pem
 
 Host incontrol-production
   # HostName 192.168.4.40 
   HostName incontrol-01.intrepidcs.corp
   User icsadmin
-  IdentityFile ~/.ssh/id_rsa
+  # IdentityFile ~/.ssh/id_rsa
   LocalForward 5560 localhost:5560
   LocalForward 9010 localhost:9001
 
