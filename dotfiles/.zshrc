@@ -54,8 +54,11 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$(brew --prefix bison)/bin:$PATH"
 
+# Autocomplete setup
+# https://stackoverflow.com/questions/73393101/how-to-enable-git-autocomplete-in-macos
+autoload -Uz compinit && compinit
 
-### Autojump Config ###
+# Autojump Config
 
 eval "$(zoxide init zsh)"
 
