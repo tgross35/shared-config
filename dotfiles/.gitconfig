@@ -28,9 +28,11 @@
 	smtpserver = smtp.mail.umich.edu
 	smtpuser = tmgross
 	smtpserverport = 587
+[protocol "file"]
+	allow = always
 
 # intrepidcs config
 [includeIf "gitdir:~/Documents/ics/"]
 	path = ~/.shared-config/dotfiles/.gitconfig-ics
-[protocol "file"]
-	allow = always
+[includeIf "gitdir:~/ics/"]
+	path = ~/.shared-config/dotfiles/.gitconfig-ics
