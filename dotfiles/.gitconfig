@@ -32,3 +32,5 @@
 # intrepidcs config
 [includeIf "gitdir:~/Documents/ics/"]
 	path = ~/.shared-config/dotfiles/.gitconfig-ics
+[protocol "file"]
+	allow = always

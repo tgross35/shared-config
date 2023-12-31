@@ -12,7 +12,7 @@ Host incontrol-rocks
   User admin
 # IdentityFile ~/.ssh/keys/aws-incontrol.pem
 
-Host incontrol-production
+Host incontrol-backend
   # HostName 192.168.4.40 
   HostName incontrol-01.intrepidcs.corp
   User icsadmin
@@ -49,3 +49,7 @@ Host rpi-remote
   HostName 76.136.32.25
   User tmgross
   Port 58242
+
+Host incontrol-proxy
+  HostName 159.203.72.29
+  User icsadmin
