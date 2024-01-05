@@ -13,6 +13,7 @@
 	smudge = git-lfs smudge -- %f
 [core]
 	pager = delta
+	editor = "vim"
 [interactive]
 	difffilter = delta --color-only
 [delta]
