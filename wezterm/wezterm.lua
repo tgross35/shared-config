@@ -39,4 +39,6 @@ config.window_padding = {
 config.initial_cols = 120
 config.initial_rows = 30
 
+config.native_macos_fullscreen_mode = true
+
 return config
